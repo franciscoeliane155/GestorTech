@@ -1,0 +1,1257 @@
+.topbar {
+    background-color: #ccdcd4;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 200px; /* Largura da sidebar */
+    right: 0;
+    z-index: 10; 
+}
+
+.tp_direita {
+    display: flex;
+    gap: 20px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.tp-direita a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.botoes {
+    background-color: #539053da;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.botoes_2 {
+    background-color: #539053da;
+    color: white;
+    margin-left: 680px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.botoes_3 {
+    background-color: #539053da;
+    color: white;
+    margin-top: 30px;
+    margin-left: 830px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.botoes_4 {
+    background-color: #539053da;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 27px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.botoes:hover, .botoes_2:hover, 
+.botoes_3:hover, .botoes_4:hover{
+    background-color: #6b8f5c;
+    transition: background-color 0.3s;
+}
+
+.botoes:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.titulo{
+    text-align: left;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 15.5px;
+    margin-bottom: 7px;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed; 
+    background-color: #408d5a;
+    width: 200px; 
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; 
+}
+
+.sidebar-title {
+    text-align: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: #84b494;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.sidebar li a:hover {
+    background-color: #acccbc;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 18.5px 0;
+    margin-left: 30px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 9px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 22px;
+    color: #777;
+    margin-bottom: 9px; 
+    text-align: center;
+}
+
+img {
+    height: 60px;
+    padding: 0px 5px;
+}
+
+main {
+    margin-left: 185px; /* Espaço para a barra lateral */
+    margin-top: 105px;
+    padding: 30px;
+    min-width: 700px;
+    max-width: 1050px;
+    height: auto;
+    min-height: 100vh; /* Altura total da tela */
+}
+
+.geral {
+    background-color:rgba(247, 247, 247, 0.932);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.titulos{
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin: 6px 0;
+    margin-left: 36px;
+    color: #666;
+    line-height: 1.7;
+}
+
+p.lista::before {
+    content: "•";
+    color: #000;
+    margin-left: 12PX; 
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;/* Ajusta a posição vertical do ponto */
+    font-size: 20pt;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #ccdcd4;
+    padding: 10px 40px;
+    margin-right: 0px;
+    margin-left: 239Px; 
+    color: #666666;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 4px 0;
+    gap: 10px;
+}
+
+.media-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.media-links img {
+    height: 25px;
+    margin: 0 4px;
+    transition: transform 0.2s;
+}
+
+.media-links img:hover {
+    transform: scale(1.1);
+}
+
+.tabela_conteudo {
+    overflow-y: auto;
+    max-height: 400px; /* Altura máxima da tabela */
+    max-width: 100%;
+    overflow-x: auto;  /* largura que quero limitar */
+    margin-top: 12px;
+    padding-bottom: 24px;
+}
+
+
+.tabelas {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 70px;
+    table-layout: auto; /* ou 'fixed', conforme necessidade */
+    width: 100%; /* melhor que auto para responsividade */
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.tabelas th{
+    background-color: #2e793d;
+    color: rgb(240, 238, 234);
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tabelas td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.tabelas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabelas tr:hover td {
+    background-color: #f1f1f1;
+}
+
+body.modo-escuro {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+body.modo-escuro .geral {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+}
+
+body.modo-escuro .topbar,
+body.modo-escuro footer {
+  background-color: #1E1E1E;
+  color: #CCCCCC;
+}
+
+body.modo-escuro .sidebar {
+  background-color: #1A1A1A;
+}
+
+body.modo-escuro .sidebar li a {
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+}
+
+body.modo-escuro .sidebar li a:hover {
+  background-color: #383838;
+}
+
+body.modo-escuro .tabelas th {
+  background-color: #052807;
+  color: #F1F8E9;
+}
+
+body.modo-escuro .tabelas td {
+  background-color: #1E1E1E;
+  color: #CCCCCC;
+}
+
+body.modo-escuro .tabelas tr:nth-child(even) {
+  background-color: #2A2A2A;
+}
+
+body.modo-escuro .tabelas tr:hover td {
+  background-color: #333333;
+}
+
+body.modo-escuro .botoes,
+body.modo-escuro .botoes_1,
+body.modo-escuro .botoes_2,
+body.modo-escuro .botoes_3,
+body.modo-escuro .btn_tab,
+body.modo-escuro .btn_tabelas,
+body.modo-escuro .btn-primary,
+body.modo-escuro .primary,
+body.modo-escuro #btnEditChoice
+body.modo-escuro .tabelas{
+  background-color: #063d08;
+  color: white;
+}
+
+body.modo-escuro .botoes:hover,
+body.modo-escuro .btn_tab:hover,
+body.modo-escuro .btn_tabelas:hover,
+body.modo-escuro .btn-primary:hover,
+body.modo-escuro .primary:hover,
+body.modo-escuro #btnEditChoice:hover {
+  background-color: #236f26;
+}
+
+body.modo-escuro input,
+body.modo-escuro select,
+body.modo-escuro textarea {
+  background-color: #222;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+body.modo-escuro .definições_geral {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.modo-escuro .definições_geral h1,
+body.modo-escuro .definições_geral h2 {
+  color: #ffffff;
+}
+
+body.modo-escuro .definições_grupo label {
+  color: #cccccc;
+}
+
+body.modo-escuro .definições_grupo input,
+body.modo-escuro .definições_grupo select {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.modo-escuro .definições_grupo input::placeholder {
+  color: #999;
+}
+
+body.modo-escuro .guardar_def,
+body.modo-escuro .resetar_def,
+body.modo-escuro .confirmar_def {
+  background-color: #388E3C;
+  color: white;
+}
+
+body.modo-escuro .guardar_def:hover,
+body.modo-escuro .resetar_def:hover,
+body.modo-escuro .confirmar_def:hover {
+  background-color: #4CAF50;
+}
+
+/* FORMULÁRIOS */
+body.modo-escuro input,
+body.modo-escuro select,
+body.modo-escuro textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.modo-escuro input::placeholder,
+body.modo-escuro textarea::placeholder {
+  color: #999;
+}
+
+/* TEXTOS GERAIS */
+body.modo-escuro p,
+body.modo-escuro h2,
+body.modo-escuro h3,
+body.modo-escuro h4,
+body.modo-escuro h6,
+body.modo-escuro .titulos,
+body.modo-escuro .titulos_tab,
+body.modo-escuro .contagem,
+body.modo-escuro .card-contagem h4,
+body.modo-escuro .card-contagem p,
+body.modo-escuro label,
+body.modo-escuro li a {
+  color: #ffffff;
+}
+
+/* ESPECÍFICO PARA .modo-label */
+body.modo-escuro .modo-label {
+  color: #dddddd;
+}
+
+body.modo-escuro .conteudo_login, body.modo-escuro .janela  {
+    color: #ffffff;
+    background-color: #302e2e;
+}
+
+body.modo-escuro .media-links img{
+  filter: invert(100%);
+}
+
+/* AJUSTES ADICIONAIS EM CARDS */
+body.modo-escuro .card-contagem {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+/* BOTÕES ESCUROS MAIS UNIFORMES */
+body.modo-escuro .btn_enviar,
+body.modo-escuro #btnEditChoice,
+body.modo-escuro #btnDeleteChoice,
+body.modo-escuro .secondary,
+body.modo-escuro .guardar_def,
+body.modo-escuro .confirmar_def,
+body.modo-escuro .resetar_def,
+body.modo-escuro .botoes {
+  background-color: #104012;
+  color: white;
+}
+
+body.modo-escuro .btn_enviar:hover,
+body.modo-escuro .guardar_def:hover,
+body.modo-escuro .confirmar_def:hover,
+body.modo-escuro .resetar_def:hover,
+body.modo-escuro .botoes:hover {
+  background-color: #28852b;
+}
+
+body.modo-escuro h1,
+body.modo-escuro h2,
+body.modo-escuro h3,
+body.modo-escuro h4,
+body.modo-escuro h6,
+body.modo-escuro p,
+body.modo-escuro .titulos,
+body.modo-escuro .titulos_tab,
+body.modo-escuro .contagem,
+body.modo-escuro label,
+body.modo-escuro li a {
+  color: #e0e0e0;
+}
+
+body.modo-escuro h4 {
+  color: #ffffff;
+}
+
+/* Modo escuro: formulários */
+body.modo-escuro .modal input, body.modo-escuro .modal_1 input, body.modo-escuro .modal_2 input, body.modo-escuro .modal_3 input,
+body.modo-escuro .modal select, body.modo-escuro .modal_1 select, body.modo-escuro .modal_2 select, body.modo-escuro .modal_3 select,
+body.modo-escuro .modal textarea, body.modo-escuro .modal_1 textarea, body.modo-escuro .modal_2 textarea, body.modo-escuro .modal_3 textarea{
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+/* Placeholders claros */
+body.modo-escuro input::placeholder,
+body.modo-escuro textarea::placeholder {
+  color: #aaaaaa;
+}
+
+/*  MODO ESCURO: MODAIS */
+body.modo-escuro .modal,
+body.modo-escuro .modal_1,
+body.modo-escuro .modal_2,
+body.modo-escuro .modal_3,
+body.modo-escuro #modalChoose {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border: 1px solid #333;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Títulos dos modais */
+body.modo-escuro .tit_modal,
+body.modo-escuro .tit_modal_1 {
+  color: #f0f0f0;
+}
+
+/* Inputs e textareas dentro do modal */
+body.modo-escuro .modal input[type="text"],
+body.modo-escuro .modal input[type="date"],
+body.modo-escuro .modal input[type="number"],
+body.modo-escuro .modal textarea {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+/* Placeholders */
+body.modo-escuro .modal input::placeholder,
+body.modo-escuro .modal textarea::placeholder {
+  color: #aaaaaa;
+}
+
+/* Botões nos modais */
+body.modo-escuro .btn-primary,
+body.modo-escuro .primary, 
+body.modo-escuro .secondary
+body.modo-escuro #btnEditChoice,
+body.modo-escuro #btnDeleteChoice {
+  background-color: #155218;
+  color: white;
+}
+
+body.modo-escuro .btn-primary:hover,
+body.modo-escuro .primary:hover,
+body.modo-escuro #btnEditChoice:hover,
+body.modo-escuro #btnDeleteChoice:hover {
+  background-color: #3b913e;
+}
+
+/* Botão de fechar */
+body.modo-escuro .modal-close {
+  color: #dddddd;
+  background-color: transparent;
+}
+
+body.modo-escuro .modal-close:hover {
+  color: red;
+}
+
+body.modo-escuro .conteudo_login p a{
+  color: rgb(255, 255, 255);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo da linha da alavanca */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Estilo do botão dentro da alavanca */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Estado ativo (modo escuro) */
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* Forma arredondada */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.entrar_btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.video_manual {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.video_manual video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fundo button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.fechar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 998;
+}
+
+/* Janela modal */
+.janela {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: none;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Botão X de fechar */
+.botao-fechar {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100%;
+}
+
+/* Ajuste para o conteúdo interno */
+.conteudo_login {
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.conteudo_login h4 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.conteudo_login input, .conteudo_login button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: #333 solid 1px;
+    border-radius: 5px;
+}
+.conteudo_login input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.conteudo_login button {
+    background-color: #000;
+    color: white;
+    max-width: 140px;
+    border: none;
+    font-size:medium;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+.conteudo_login button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.conteudo_login p {
+    text-align: center;
+    margin-left: 0;
+}
+
+.conteudo_login a {
+    text-align: center;
+    margin-left: 0;
+}
+
+.conteudo_login a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contato_form input, .input-row input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #222;
+  font-size: 15px;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.contato_form input{
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+textarea {
+  width: 100%;
+  font-family: Arial, Helvetica;
+  padding: 12px 14px;
+  border: 1px solid #222;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn_enviar {
+    background-color: #25221f;
+    position: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+} 
+
+.btn_enviar:hover {
+    background-color: #3a3735;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn_tab {
+    background-color: #539053da;
+    margin-left: 70px;
+    color: white;
+    margin-right: 5px;
+    padding: 12px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn_tabelas {
+    background-color: #539053da;
+    color: white;
+    margin-right: 5px;
+    padding: 12px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.titulos_tab{
+    font-size: 28px;
+    color: #07400d;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 72px;
+    text-align: left;
+    font-weight: bold;
+}
+.btn_tabelas:hover, .btn_tab:hover {
+    background-color: #6b8f5c;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    background: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .modal,
+.modal_1,
+.modal_2,
+.modal_3 {
+  display: none;
+}
+
+  .modal_1, .modal-body, .modal-footer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    background: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+    display: none;
+  }
+
+    .modal_2, #modalChoose{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    background: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .modal_3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    background: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .tit_modal{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+/* Botão de fechar na caixa modal */
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  background: none;
+  border: none;
+}
+.modal-close:hover {
+  color: red;
+}
+
+  .modal-footer {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #modalAdd textarea #addObservacoes,
+#modalEdit textarea #editObservacoes {
+  width: 100%;
+  height: 65px;
+  resize: vertical;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.modal input[type="text"],
+.modal input[type="date"],
+.modal input[type="number"],
+.modal textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+  .error-msg {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+    display: none;
+  }
+ 
+  .btn-secondary {
+    background-color: #d6d6d6;
+    border: 1px solid #aaa;
+    padding: 10px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .btn-primary{
+    background-color: #2d5f32;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+  }
+
+  .btn-primary:hover{
+    background-color: #3f8346;
+    transition: background;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .btn-secondary:hover{
+    background-color: #eee;
+    transition: background;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  h6{
+    font-size: 17px;
+    margin: 6px 0;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 700;
+  }
+
+  .tit_modal_1{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #edit-error label{
+    font-size: 18px;
+    display:none;
+    text-align: right;
+
+  }
+  #btnEditChoice, .primary{
+    margin-left: 16px;
+  }
+
+  #btnEditChoice, .primary, #btnDeleteChoice, .secondary{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #539053da;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .primary:hover, .secondary:hover{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #7db17dda;
+    border-radius: 5px;
+    border: none;
+    transform: scale(1.1);
+  }
+
+  .modal-body-1{
+    font-size: 180px;
+    display:none;
+    text-align: right;
+  }
+
+  .modal-body-3 label{
+    font-size: 18px;
+    display:none;
+    text-align: right;
+  
+  }
+
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contagem {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #2f593c;
+      font-weight: bold;
+    }
+
+    .contagem_conteudo {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .card-contagem {
+      background-color: #3b855b;
+      color: #ffffff;
+      padding: 20px 25px;
+      border-radius: 15px;
+      text-align: center;
+      width: 160px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .card-contagem:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-contagem:active {
+      transform: scale(0.95) rotate(-1deg);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-contagem h4 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+    }
+
+    .card-contagem p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      color: #ffffff;
+    }
+
+.pesquisa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.pesquisa input{
+  margin-left: 70px;
+  min-width: 100px;
+  max-width: 500px;
+}
+
+.pesquisa select{
+  min-width: 50px;
+  max-width: 100px;
+}
+.pesquisa input[type="text"],
+.pesquisa select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  flex: 1;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.pesquisa input[type="text"]:focus,
+.pesquisa select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px #4a90e280;
+}
+
+@media (max-width: 600px) {
+  .pesquisa {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.modo-label {
+  font-size: 17px;
+  font-weight: bold;
+  color: #444;
+  line-height: 37px;   /* Igual à altura do switch */
+  display: inline-block;
+  vertical-align: center;
+}
+
+.modo-toggle {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o texto e o switch */
+  gap: 8px;
+}
+
+
+
+
